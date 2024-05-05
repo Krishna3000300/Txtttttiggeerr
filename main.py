@@ -35,7 +35,7 @@ async def account_login(bot: Client, m: Message):
 
 @bot.on_message(filters.command("stop") & filters.user(ADMINS))
 async def restart_handler(_, m):
-    await m.reply_text("**STOPPED by 𒆜mᴍiɪkᴋkᴋu𒆜🥀**🛑🛑", True)
+    await m.reply_text("**STOPPED by 𒆜MIKKY𒆜🥀**🛑🛑", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
@@ -197,7 +197,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    prog = await m.reply_text(f"**Downloading:-**\n\n** Video Name :-** `{name}\nQuality - {raw_text2}`\n**link:**`{url}`\n\n **bot made by 🥀𒆜ᴍɪMIKKUᴋᴜ𒆜🥀**")
+                    prog = await m.reply_text(f"**Downloading:-**\n\n** Video Name :-** `{name}\nQuality - {raw_text2}`\n**link:**`{url}`\n\n **bot made by 🥀𒆜MIKKU𒆜🥀**")
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
                     await prog.delete(True)
@@ -211,7 +211,7 @@ async def account_login(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("🔰Done Boss🔰")
+    await m.reply_text("✅MIKKU✅ DONE")
 
 
 bot.run()
